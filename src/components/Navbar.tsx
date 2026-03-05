@@ -52,7 +52,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href={CONTACT_INFO.whatsappLink}
+            href={CONTACT_INFO.whatsappLink} // <-- Este ya estaba bien
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 px-5 py-2 text-sm font-semibold font-body rounded-sm bg-gold text-navy hover:bg-gold-light transition-colors duration-300"
@@ -92,9 +92,10 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="https://wa.me/573188815276"
+                href={CONTACT_INFO.whatsappLink} // <-- CORREGIDO: Ahora usa la constante global
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => setOpen(false)} // Buena práctica: cerrar el menú al hacer clic
                 className="px-6 py-2 bg-gold text-navy font-semibold rounded-sm font-body"
               >
                 WhatsApp
