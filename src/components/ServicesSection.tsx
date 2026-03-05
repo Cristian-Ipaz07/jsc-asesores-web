@@ -74,7 +74,7 @@ const services = [
     title: "Propiedad Horizontal",
     description: "Servicio especializado en la administración contable, financiera y jurídica de copropiedades.",
     detailedItems: ["Contabilidad de la copropiedad", "Estados financieros", "Presupuesto anual", "Control de cartera", "Asesoría en reglamento y actas"],
-    target: "Conjuntos residenciales, edificios y consejos de administración.",
+    target: "Conjuntos residenciales, edificios, consejos de administración entre otros.",
     problem: "Falta de transparencia financiera y cartera morosa.",
     items: ["Contabilidad copropiedad", "Control de cartera", "Presupuesto anual"],
   },

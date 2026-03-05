@@ -1,12 +1,11 @@
 import AnimatedSection from "./AnimatedSection";
-import { Rocket, Store, Briefcase, Building, FileCheck } from "lucide-react";
+import { Rocket, Store, Briefcase, Building, FileCheck,ShieldCheck } from "lucide-react";
 
 const segments = [
-  { icon: Rocket, label: "Emprendedores iniciales" },
+  { icon: Rocket, label: "Emprendedores" },
   { icon: Store, label: "Comerciantes independientes" },
-  { icon: Briefcase, label: "Profesionales independientes" },
   { icon: Building, label: "PYMES" },
-  { icon: FileCheck, label: "Empresas en formalización" },
+  { icon: ShieldCheck, label: "Copropiedades" },
 ];
 
 const ClientSegments = () => (
