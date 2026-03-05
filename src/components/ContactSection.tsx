@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AnimatedSection from "./AnimatedSection";
+import { CONTACT_INFO } from "../config"; // Importamos para usar el número global
 
 const needs = [
   "Contabilidad",
@@ -7,11 +8,13 @@ const needs = [
   "Emprendimiento",
   "Nómina",
   "Finanzas",
+  "Propiedad Horizontal", // Nuevo item añadido
   "Otro servicio",
 ];
 
 const ContactSection = () => {
   const [selected, setSelected] = useState("Contabilidad");
+  const [name, setName] = useState("");
 
   return (
     <section id="contacto" className="section-padding bg-navy text-cream">
@@ -62,7 +65,7 @@ const ContactSection = () => {
                   const tipo = (form.elements.namedItem("tipo") as HTMLSelectElement).value;
                   const msg = `Hola, soy ${name} (${tipo}). Necesito asesoría en: ${selected}.`;
                   window.open(
-                    `https://wa.me/573188815276?text=${encodeURIComponent(msg)}`,
+                    `https://wa.me/${CONTACT_INFO.phone}?text=${encodeURIComponent(msg)}`,
                     "_blank"
                   );
                 }}
@@ -74,8 +77,10 @@ const ContactSection = () => {
                   <input
                     name="name"
                     required
-                    className="w-full bg-cream/5 border border-cream/15 rounded-sm px-4 py-3 text-sm font-body text-cream placeholder:text-cream/30 focus:outline-none focus:border-gold transition-colors"
-                    placeholder="Su nombre"
+                    value={name}
+                    onChange={(e) => setName(e.target.value.toUpperCase())}
+                    className="w-full bg-cream/5 border border-cream/15 rounded-sm px-4 py-3 text-sm font-body text-cream placeholder:text-cream/30 focus:outline-none focus:border-gold transition-colors uppercase"
+                    placeholder="SU NOMBRE"
                   />
                 </div>
                 <div>
@@ -84,12 +89,13 @@ const ContactSection = () => {
                   </label>
                   <select
                     name="tipo"
-                    className="w-full bg-cream/5 border border-cream/15 rounded-sm px-4 py-3 text-sm font-body text-cream focus:outline-none focus:border-gold transition-colors appearance-none"
+                    // Añadimos clases para asegurar que el texto sea visible
+                    className="w-full bg-navy border border-cream/15 rounded-sm px-4 py-3 text-sm font-body text-cream focus:outline-none focus:border-gold transition-colors appearance-none cursor-pointer"
                   >
-                    <option value="Persona Natural">Persona Natural</option>
-                    <option value="Emprendedor">Emprendedor</option>
-                    <option value="Independiente">Independiente</option>
-                    <option value="PYME">PYME</option>
+                    {/* Estilizamos las options para que tengan fondo oscuro y texto claro */}
+                    <option value="Persona Natural" className="bg-navy text-cream">Persona Natural</option>
+                    <option value="Persona Juridica" className="bg-navy text-cream">Persona Juridica</option>
+                    <option value="Independiente" className="bg-navy text-cream">Independiente</option>
                   </select>
                 </div>
                 <div>

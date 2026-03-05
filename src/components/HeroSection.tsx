@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
+import { CONTACT_INFO } from "../config";
 
 const HeroSection = () => (
   <section
@@ -56,10 +57,10 @@ const HeroSection = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-wrap gap-4"
+          className="flex flex-wrap gap-4 relative z-20"
         >
           <a
-            href="https://wa.me/573188815276"
+            href={CONTACT_INFO.whatsappLink} // <-- Aquí usamos la constante global
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3.5 bg-gold text-navy font-semibold font-body rounded-sm hover:bg-gold-light transition-all duration-300 hover:shadow-lg hover:shadow-gold/20"

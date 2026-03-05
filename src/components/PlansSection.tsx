@@ -1,5 +1,7 @@
 import AnimatedSection from "./AnimatedSection";
 import { Check } from "lucide-react";
+// 1. Importamos la configuración global
+import { CONTACT_INFO } from "../config"; 
 
 const plans = [
   {
@@ -14,7 +16,7 @@ const plans = [
     items: ["Contabilidad completa.", "Gestión de Impuestos.", "Nómina básica."],
   },
   {
-    name: "Plan Pyme",
+    name: "Plan Premium",
     featured: false,
     items: [
       "Contabilidad completa.",
@@ -89,8 +91,9 @@ const PlansSection = () => (
                   </li>
                 ))}
               </ul>
+              {/* 2. Link dinámico con el nombre del plan */}
               <a
-                href="https://wa.me/573188815276"
+                href={`https://wa.me/${CONTACT_INFO.phone}?text=${encodeURIComponent(`Hola, me interesa el ${p.name}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-6 block text-center py-3 rounded-sm text-sm font-body font-semibold transition-all duration-300 ${
