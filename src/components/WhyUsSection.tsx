@@ -4,18 +4,18 @@ import { UserCheck, MessageCircle, ShieldCheck } from "lucide-react";
 const items = [
   {
     icon: UserCheck,
-    title: "Atención Directa",
-    desc: "Atención personalizada directamente con Contador Público titulado.",
+    title: "Acompañamiento Estratégico",
+    desc: "Atención personalizada y cercana, orientada a comprender la realidad de cada cliente y acompañarlo en la toma de decisiones.",
   },
   {
     icon: MessageCircle,
-    title: "Lenguaje Claro",
-    desc: "Explicaciones comprensibles para que entienda su negocio, sin tecnicismos innecesarios.",
+    title: "Claridad para Decidir Mejor",
+    desc: "Explicaciones claras y comprensibles para entender su negocio sin tecnicismos, facilitando decisiones informadas.",
   },
   {
     icon: ShieldCheck,
-    title: "Enfoque Preventivo",
-    desc: "Acompañamiento constante para evitar sanciones y contingencias legales ante entes de control.",
+    title: "Gestión Preventiva y Responsable",
+    desc: "Acompañamiento permanente que contribuye al orden y estabilidad, anticipando riesgos y evitando contingencias.",
   },
 ];
 

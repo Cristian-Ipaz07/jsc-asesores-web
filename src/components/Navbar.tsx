@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { CONTACT_INFO } from "../config";
 
 const links = [
   { label: "Inicio", href: "#inicio" },
@@ -29,10 +30,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-4 lg:px-8">
-        <a href="#inicio" className="flex items-center gap-2">
-          <span className="text-2xl font-heading font-bold text-gold">JSC</span>
-          <span className="hidden sm:inline text-sm font-body text-cream/80 tracking-wider uppercase">
-            Asesores
+        <a href="#inicio" className="flex items-center gap-2 group">
+          <span className="text-xl sm:text-2xl font-heading font-bold text-gold shrink-0">
+            JSC
+          </span>
+          <span className="flex flex-col sm:block text-[10px] sm:text-sm font-body text-cream/80 tracking-wider uppercase leading-tight">
+            <span>Asesores y</span>
+            <span className="sm:ml-1">Consultores</span>
           </span>
         </a>
 
@@ -48,7 +52,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://wa.me/573188815276"
+            href={CONTACT_INFO.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 px-5 py-2 text-sm font-semibold font-body rounded-sm bg-gold text-navy hover:bg-gold-light transition-colors duration-300"

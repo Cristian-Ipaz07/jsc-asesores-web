@@ -14,11 +14,9 @@ const AboutSection = () => (
               Quiénes Somos
             </h2>
             <p className="text-muted-foreground font-body leading-relaxed mt-10">
-              En JSC Asesores y Consultores acompañamos la correcta gestión de
-              sus obligaciones contables, tributarias, financieras y legales.
-              Nuestro enfoque combina profesionalismo, cercanía,
-              confidencialidad y soluciones prácticas adaptadas a la normatividad
-              vigente en Colombia.
+              En JSC Asesores y Consultores acompañamos a personas y organizaciones en la gestión y toma de decisiones relacionadas con sus actividades económicas, aportando claridad, orden y respaldo profesional.
+              <br /><br />
+              Nuestro enfoque combina profesionalismo, cercanía y confidencialidad, con soluciones prácticas y estratégicas que contribuyen al crecimiento sostenible y al desarrollo responsable de cada cliente, adaptándonos a sus necesidades y al entorno normativo aplicable.
             </p>
           </div>
 
@@ -31,9 +29,7 @@ const AboutSection = () => (
                 </h3>
               </div>
               <p className="text-muted-foreground text-sm font-body leading-relaxed">
-                Brindar servicios contables, financieros y jurídicos confiables y
-                oportunos, aportando valor real mediante asesoría clara, ética y
-                orientada al crecimiento sostenible.
+                Brindar servicios profesionales confiables y oportunos, mediante un acompañamiento integral, claro y ético, que aporte valor real, facilite la toma de decisiones y contribuya al crecimiento sostenible y ordenado de las actividades económicas de nuestros clientes.
               </p>
             </div>
             <div className="p-6 bg-card rounded-sm elegant-shadow border-l-4 border-gold">
@@ -44,9 +40,7 @@ const AboutSection = () => (
                 </h3>
               </div>
               <p className="text-muted-foreground text-sm font-body leading-relaxed">
-                Consolidarnos como una firma reconocida a nivel regional por su
-                seriedad y calidad profesional, siendo aliados estratégicos en el
-                desarrollo empresarial de nuestros clientes.
+                Ser una firma de referencia por su excelencia profesional, ética y enfoque estratégico, reconocida por acompañar y fortalecer a personas y organizaciones en la toma de decisiones y la gestión responsable, siendo un apoyo estratégico para su crecimiento, sostenibilidad y evolución en diversos entornos empresariales.
               </p>
             </div>
           </div>

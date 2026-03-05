@@ -1,4 +1,9 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+export const CONTACT_INFO = {
+  phoneRaw: "573162933804", // Formato para el enlace de WhatsApp
+  phoneDisplay: "316 293 3804", // Formato visual para el Footer
+  whatsappLink: "https://wa.me/573162933804",
+};
 
 const Footer = () => (
   <footer className="bg-navy border-t border-cream/10">
@@ -7,7 +12,7 @@ const Footer = () => (
         <div>
           <span className="text-2xl font-heading font-bold text-gold">JSC</span>
           <span className="ml-2 text-sm font-body text-cream/60 tracking-wider uppercase">
-            Asesores
+            Asesores y Consultores
           </span>
           <p className="mt-4 text-cream/40 text-sm font-body leading-relaxed max-w-xs">
             Soluciones integrales contables, financieras y jurídicas. Acompañamos
@@ -22,7 +27,8 @@ const Footer = () => (
           <ul className="space-y-3">
             <li className="flex items-center gap-3 text-cream/50 text-sm font-body">
               <Phone className="w-4 h-4 text-gold" />
-              318 881 5276
+              {/* Se actualizará solo cuando cambies el archivo config */}
+              {CONTACT_INFO.phoneDisplay}
             </li>
             <li className="flex items-center gap-3 text-cream/50 text-sm font-body">
               <Mail className="w-4 h-4 text-gold" />
