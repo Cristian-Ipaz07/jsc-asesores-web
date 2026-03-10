@@ -19,7 +19,7 @@ const services = [
     title: "Servicios Contables",
     description: "Es el servicio encargado de organizar, registrar y estructurar la información financiera de tu empresa conforme a la normatividad vigente.",
     detailedItems: ["Registro y organización contable", "Elaboración de estados financieros", "Conciliaciones bancarias", "Informes periódicos", "Análisis financiero básico"],
-    target: "Empresas, pymes y emprendedores que ya facturan o están en crecimiento.",
+    target: "Empresas, pymes, emprendedores, entre otros que ya facturan o están en crecimiento.",
     problem: "Desorden contable, falta de claridad financiera y riesgos ante entidades de control.",
     items: ["Contabilidad general", "Estados financieros", "Análisis financiero"],
   },
