@@ -14,14 +14,14 @@ const team = [
     name: "Juan Sebastián Castro Suárez",
     title: "Contador Público – Especialista en Alta Gerencia",
     description: "Profesional con enfoque estratégico e integral en el acompañamiento contable, tributario y financiero. Se caracteriza por combinar una visión corporativa y gerencial con un trato cercano y claro.",
-    sectors: ["Comercial y Ventas", "Servicios Técnicos", "Educación", "Salud", "Industrial", "Tecnología y Economía Digital", "Propiedad Horizontal", "Sector Jurídico"]
+    sectors: ["Comercial y Ventas", "Servicios Técnicos", "Educación", "Salud", "Industrial", "Tecnología y Economía Digital", "Propiedad Horizontal"]
   },
   {
     role: "Dirección Jurídica",
     name: "Daniela Estefanía Castro Suárez",
     title: "ABOGADA – DIRECTORA JURÍDICA",
     description: "Profesional del derecho con enfoque estratégico y preventivo. Brinda asesoría clara y responsable en defensa de derechos, resolución de conflictos y cumplimiento normativo en áreas constitucionales y empresariales.",
-    sectors: ["Derecho Constitucional", "Derecho Empresarial", "Asesoría Preventiva", "Resolución de Conflictos", "Cumplimiento Normativo"]
+    sectors: ["Derecho Constitucional", "Derecho Empresarial", "Asesoría Preventiva", "Resolución de Conflictos", "Cumplimiento Normativo", "Derecho civil", "Derecho laboral"]
   }
 ];
 
